@@ -141,54 +141,137 @@ footer {
     margin-top: 2rem;
     font-size: 0.9rem;
 }
+/* Ficha Corporativa */
+.corporate-card {
+    margin-top: 3rem;
+    padding: 2.5rem;
+    background: linear-gradient(135deg, #ffffff, #f3f3f3);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-/* Responsive Design */
+.corporate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.corporate-card h2 {
+    color: #003087;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 4px solid #003087;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* Contenido de la ficha */
+.corporate-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* Lista de características */
+.corporate-list {
+    flex: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.corporate-list li {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #444;
+    line-height: 1.8;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.corporate-list li strong {
+    color: #003087;
+    font-weight: 700;
+}
+
+.corporate-list li::before {
+    content: "•";
+    font-size: 1.5rem;
+    color: #003087;
+}
+
+/* Tabla de atributos técnicos */
+.corporate-table {
+    flex: 1;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.corporate-table th, .corporate-table td {
+    text-align: left;
+    padding: 1.2rem;
+    border: 1px solid #ddd;
+    font-size: 1.1rem;
+}
+
+.corporate-table th {
+    background: #003087;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.corporate-table td {
+    background: #f9f9f9;
+    color: #333;
+}
+
+.corporate-table tr:nth-child(even) td {
+    background: #f1f1f1;
+}
+
+.corporate-table tr:hover td {
+    background: #e6f0ff;
+    color: #003087;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Responsive Design for Ficha Corporativa */
 @media (max-width: 768px) {
-    .presentation-content {
+    .corporate-content {
         flex-direction: column;
-        text-align: center;
     }
 
-    .product-image {
-        margin-bottom: 1rem;
+    .corporate-table {
+        font-size: 1rem;
     }
 
-    .header-container h1 {
-        font-size: 2.8rem;
-    }
-
-    .header-container p {
+    .corporate-list li {
         font-size: 1.1rem;
-    }
-
-    .specifications table {
-        font-size: 0.9rem;
     }
 }
 
 @media (max-width: 480px) {
-    .header-container h1 {
-        font-size: 2rem;
+    .corporate-card {
+        padding: 1.5rem;
     }
 
-    .header-container p {
-        font-size: 0.9rem;
+    .corporate-card h2 {
+        font-size: 1.8rem;
     }
 
-    .container {
-        padding: 1rem;
+    .corporate-table th, .corporate-table td {
+        padding: 0.8rem;
     }
 
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    .features li {
-        font-size: 0.9rem;
-        padding: 0.5rem 0.7rem;
-    }
-
-    .specifications table {
-        font-size: 0.8rem;
+    .corporate-list li {
+        font-size: 1rem;
     }
 }
