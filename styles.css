@@ -23,17 +23,17 @@ header {
     background: #003087;
     color: #fff;
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 2.5rem 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .header-container h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin: 0;
 }
 
 .header-container p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-top: 0.5rem;
     opacity: 0.9;
 }
@@ -48,24 +48,25 @@ header {
 /* Sections */
 section {
     margin-bottom: 3rem;
-    padding: 1.5rem;
+    padding: 2rem;
     background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
     color: #003087;
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
-    border-bottom: 2px solid #003087;
+    border-bottom: 3px solid #003087;
     padding-bottom: 0.5rem;
 }
 
 /* Description Section */
 .description p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #555;
+    line-height: 1.8;
 }
 
 /* Presentation Section */
@@ -78,14 +79,14 @@ h2 {
 
 .product-image {
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .presentation-content p {
     flex: 1;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #444;
     line-height: 1.8;
 }
@@ -102,8 +103,8 @@ h2 {
     color: #fff;
     margin: 0.5rem 0;
     padding: 0.8rem 1rem;
-    border-radius: 5px;
-    font-size: 1rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -111,8 +112,38 @@ h2 {
 
 .features li::before {
     content: "✔";
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #fff;
+}
+
+/* Advantages Section */
+.advantages p {
+    font-size: 1.2rem;
+    color: #444;
+    line-height: 1.8;
+}
+
+/* Specifications Section */
+.specifications table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.specifications th, .specifications td {
+    text-align: left;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+}
+
+.specifications th {
+    background: #003087;
+    color: #fff;
+    font-weight: bold;
+}
+
+.specifications td {
+    background: #f9f9f9;
 }
 
 /* Footer */
@@ -137,10 +168,14 @@ footer {
     }
 
     .header-container h1 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
 
     .header-container p {
-        font-size: 1rem;
+        font-size: 1.1rem;
+    }
+
+    .specifications table {
+        font-size: 0.9rem;
     }
 }
