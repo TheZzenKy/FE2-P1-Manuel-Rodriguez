@@ -1,0 +1,22 @@
+git config --global user.name "Manuel Rodriguez"
+git config --global user.email manuel.rodriguez74@inacapmail.cl
+
+git remote add origin https://github.com/TheZzenKy/FE2-P1-Manuel-Rodriguez.git
+
+
+
+Etapa 1: Reacondicionamiento de pagina
+Necesito que me construyas una estructura inicial de una pagina web promocionando un nuevo producto en este caso la playstation 5, quiero que tenga como estructura: Nombre del producto, una breve descripcion, seccion destacada del producto y que sea una estructura básica
+
+Etapa 2: Mejora visual / Distribución
+Necesito que mejores la presentacion visual de la pagina, quiero una presentacion mas moderna, paletas de colores como la pagina de sony, ya que la consola es promocionando la ps5 de sony , y una mejor distribucion.
+
+Etapa 3:Acontinuacion necesito que la consola tenga una mejor explicacion como sus beneficios, ventajas con la competencia, especificaciones tecnica y una breve presentacion, todo esto llamando y captando la atencion del cliente.
+
+
+Etapa 4:Necesito que la pagina se adapte de manera responsive para los usuarios moviles, manteniendo su legibilidad y distribución
+
+Etapa 5:Quiero que me incorpores una seccion tipo ficha corporativa donde se incluya caracteristica de manera organizada (listado o tabla), 2-3 atributos tecnicos de manera relevante y clara/ordenada
+
+Etapa 6: como ultimo necesito que la pagina sea mas interactiva, como hovers, mas imagenes un favicon, mas imágenes y un nav
+
