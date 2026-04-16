@@ -62,13 +62,6 @@ h2 {
     padding-bottom: 0.5rem;
 }
 
-/* Description Section */
-.description p {
-    font-size: 1.2rem;
-    color: #555;
-    line-height: 1.8;
-}
-
 /* Presentation Section */
 .presentation-content {
     display: flex;
@@ -114,13 +107,6 @@ h2 {
     content: "✔";
     font-size: 1.3rem;
     color: #fff;
-}
-
-/* Advantages Section */
-.advantages p {
-    font-size: 1.2rem;
-    color: #444;
-    line-height: 1.8;
 }
 
 /* Specifications Section */
@@ -177,5 +163,32 @@ footer {
 
     .specifications table {
         font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container h1 {
+        font-size: 2rem;
+    }
+
+    .header-container p {
+        font-size: 0.9rem;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .features li {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.7rem;
+    }
+
+    .specifications table {
+        font-size: 0.8rem;
     }
 }
